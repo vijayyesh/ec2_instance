@@ -3,14 +3,14 @@ variable "aws_region" {
   }
 
 variable "key_name" {
-  default = "mykey"
+   default = "mykey"
 }
-  variable "region_ami" {
-    type =map
+variable "region_ami" {
+    type = map
       
-    default = {
+   default = {
      us-east-1= "ami-0c293f3f676ec4f90"
-     us=east-2= "ami-03a0c45ebc70f98ea"
+     us-east-2= "ami-03a0c45ebc70f98ea"
   }
 
 variable "region_instance_type" {
